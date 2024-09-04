@@ -28,9 +28,5 @@ def processar_faturamento(caminho_arquivo):
 
     except FileNotFoundError:
         print(f"Arquivo não encontrado: {caminho_arquivo}")
-    except json.JSONDecodeError as e:
-        print(f"Erro ao decodificar o arquivo JSON: {e}")
-    except Exception as e:
-        print(f"Erro inesperado: {e}")
 
 processar_faturamento(caminho_arquivo)
